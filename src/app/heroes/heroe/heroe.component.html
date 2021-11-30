@@ -1,0 +1,26 @@
+<h1>{{ nombre }}</h1>
+<!--El DL es un description list-->
+<dl>
+    <!--Un td es un table description define una celda en una tabla-->
+    <td> Nombre: </td>
+    <!-- dd define un término o nombre en una lista de descripciones(dl)-->
+    <dd>{{ nombre }}</dd>
+
+    <td> Edad: </td>
+    <dd>{{ edad }}</dd>
+
+    <td> Función: </td>
+    <dd>{{ obtenerNombre() }}</dd>
+
+    <td> Capitalizado: </td>
+    <dd>{{ nombreCapitalizado }}</dd>
+
+</dl>
+
+<button (click)="cambiarNombre()">
+    Cambiar Héroe
+</button>
+
+<button (click)="cambiarEdad()">
+    Cambiar edad
+</button>
